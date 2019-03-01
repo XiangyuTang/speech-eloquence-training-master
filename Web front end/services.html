@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>在线学习-演讲口才训练大师</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link rel="stylesheet" href="css/styles-services.css">
+    <link href="css/bootstrap-services.css" rel="stylesheet" type="text/css" media="all" />
+        
+	<style>
+        audio { display: block; margin-bottom: 10px; }
+            
+        #youraudio{display:inline-block;width:512px; height:384px ;position:absolute;top:37px;}
+        #audio-container { padding: 20px 0; }
+        #wenzi{padding-left: 100px;}
+        #start{margin-left: 50px;}
+        #stop{margin-left: 50px;}
+        #comment{display:block;margin:50px auto ;border:groove 2px #f5c506}
+        #translate{display:inline-block;margin:0 auto ;border:dotted 5px #f5c506}
+        
+        .ui-btn { display: inline-block; padding: 5px 20px; font-size: 14px; line-height: 1.428571429; box-sizing:content-box; text-align: center; border: 1px solid #e8e8e8; border-radius: 3px; 
+        color: #555; background-color: #fff; border-color: #e8e8e8; white-space: nowrap; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+        .ui-btn:hover, .ui-btn.hover { color: #333; text-decoration: none; background-color: #f5c506; border:1px solid #ddd; }
+        .ui-btn:focus, .ui-btn:active { color: #333; outline: 0; }
+        .ui-btn.disabled, .ui-btn.disabled:hover, .ui-btn.disabled:active, .ui-btn[disabled], .ui-btn[disabled]:hover, .ui-state-disabled .ui-btn { cursor: not-allowed; background-color: #eee;
+        border-color: #eee; color: #aaa; }
+        .ui-btn-primary { color: #fff;  background-color: #f5c506;  border-color: #f5c506; }
+        .ui-btn-primary:hover, .ui-btn-primary.hover { color: #fff; background-color:#FAE58F; border-color: #FAE58F; }
+        .ui-btn-primary:focus, .ui-btn-primary:active { color: #fff; }
+        .ui-btn-primary.disabled:focus{ color: #aaa; }
+        
+        #aspect1{font-size: 1.2em;text-decoration: none;color:#262626;font-weight: 400;text-transform:uppercase;padding:6px 15px 0 8px;display:block;margin:20px 0 20px 100px;}
+		#aspect2{font-size: 1.2em;text-decoration: none;color:#262626;font-weight: 400;text-transform:uppercase;padding:6px 15px 0 8px;display:block;margin:20px 0 20px 100px;}
+		#aspect3{font-size: 1.2em;text-decoration: none;color:#262626;font-weight: 400;text-transform:uppercase;padding:6px 15px 0 8px;display:block;margin:20px 0 20px 100px;}
+		#yourscore{font-size: 1.2em;text-decoration: none;color:#262626;font-weight: 400;text-transform:uppercase;padding:6px 15px 0 8px;display:block;margin:20px 0 20px 100px;}
+		#thescore{font-size: 1.8em;text-decoration: none;color:#C9302C;font-weight: 400;text-transform:uppercase;padding:6px 15px 0 8px;display:block;margin:20px 0 20px 100px;}
+			
+		#video{/*镜子模式*/transform: rotateY(-180deg);}
+	</style>
+       
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Theyalow Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	
+	<!---- animated-css ---->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<!---- animated-css ---->	
+</head>
+<body> 
+	
+	<!--header-->
+	<div class="header-in">
+		<div class="container">
+			<div class="logo">
+				<a><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul>
+					<li><a class="scroll"><span> </span> 关于本站</a></li>
+					<li><a href="services.html" class="scroll"> &nbsp;&nbsp;<span class="service"> </span>开始学习&nbsp;&nbsp;</a></li>						
+					<li><a class="scroll"><span class="mail"> </span>联系我们</a></li>
+				</ul>
+				
+				<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(300, function(){
+						});
+					});
+				</script>
+				
+			</div>
+			<div class="clearfix"> 
+			</div>
+		</div>
+	</div>
+	
+	<!--content-->
+	<div class="content">
+		<div class="services">
+			<div class="container">
+				<h3>在线学习</h3>
+				<div class="service-in wow bounceIn" data-wow-delay="0.4s">
+					<video id="video" width="512" height="384" autoplay></video>
+					<canvas id="canvas" width="1" height="1"></canvas>
+				
+					<div id= "youraudio">
+			      	  	<div id="wenzi"><h2>&nbsp;&nbsp;在此处上传您的录音</h2></id>
+			       	 	<div id="audio-container"> </div>
+			        	<button id="start" class="ui-btn ui-btn-primary" disabled>录音</button>
+			        	<button id="stop" class="ui-btn ui-btn-primary" disabled>停止</button>
+			       </div>
+
+			        <script src="js/recorder.js"></script>
+			        <script>
+			            window.onload = function(){
+			                var start = document.querySelector('#start');
+			                var stop = document.querySelector('#stop');
+			                var container = document.querySelector('#audio-container');
+			                var a1 = document.getElementById("aspect1");
+			                var a2 = document.getElementById("aspect2");
+			                var a3 = document.getElementById("aspect3");
+			                var ys = document.getElementById("yourscore");
+			                var ts = document.getElementById("thescore");
+			                var tt = document.getElementById("translateTitle");
+			                var ti = document.getElementById("translateInner");
+			                
+			                
+			                var recorder = new Recorder({
+			                    sampleRate: 44100, //采样频率，默认为44100Hz(标准MP3采样率)
+			                    bitRate: 128, //比特率，默认为128kbps(标准MP3质量)
+			                    success: function(){ //成功回调函数
+			                        start.disabled = false;
+			                    },
+			                    error: function(msg){ //失败回调函数
+			                        alert(msg);
+			                    },
+			                    fix: function(msg){ //不支持H5录音回调函数
+			                        alert(msg);
+			                    }
+			                });
+
+			                start.addEventListener('click',function(){
+			                    this.disabled = true;
+			                    stop.disabled = false;
+			                    var audio = document.querySelectorAll('audio');
+			                    for(var i = 0; i < audio.length; i++){
+			                        if(!audio[i].paused){
+			                            audio[i].pause();
+			                        }
+			                    }
+			                    recorder.start();
+			                });
+			                stop.addEventListener('click',function(){
+			                    this.disabled = true;
+			                    start.disabled = false;
+			                    recorder.stop();
+			                    recorder.getBlob(function(blob){
+			                        var audio = document.createElement('audio');
+			                        audio.src = URL.createObjectURL(blob);
+			                        audio.controls = true;
+			                        container.appendChild(audio);
+			                    });
+			                    
+			                    //此处画饼
+			                    ys.innerHTML = "您的综合分数：";
+			                    ts.innerHTML = "85";
+			                    a1.innerHTML = "+发音准确。";
+			                    a2.innerHTML = "-演讲语速过快，建议您适当放慢语速。";
+			                    a3.innerHTML = "-演讲不够流利，建议您多加练习。";
+			                });
+			            };
+			        </script>
+
+					<div class="clearfix"> </div>
+				</div>
+				
+				<div id="comment">
+			        <div id="yourscore"> </div>
+			        <div id="thescore"> </div>
+			        <div id="aspect1"> </div>
+			        <div id="aspect2"> </div>
+			        <div id="aspect3"> </div>
+			    </div>
+  	
+			</div>
+		</div>	 
+			<div class="clearfix"> </div>
+	</div>	
+
+	<!--manual-->
+	<div class="sed-ut">
+		<div class="container">
+			<h3>How to Use?</h3>
+			<div class="col-md-7 design-free">
+			<img src="images/co.png" class="img-responsive" alt="" />
+			<span>ITS 100% FREE</span>
+			</div>
+			<div class="col-md-5 design-in">
+				<ul>
+					<li><a><span> </span>1.将摄像头作为镜子</a></li>
+					<li><a><span> </span>2.上传您的录音 </a></li>
+					<li><a><span> </span>3.参考分数和指导意见练习</a></li>
+					<li><a><span> </span>4.提升您的演讲水平与口才 </a></li>
+				</ul>
+			</div>
+				
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<a href="#" class="footer-left"><img  src="images/logo-1.png" alt=" " /></a>
+			<p class="footer-grid">Copyright &copy; 2018 Designed by <a target="_blank">nenggeshanwu.jpg</a> </p>
+					
+			<div class="clearfix"> </div>
+		</div>
+			 	
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+	    var aVideo = document.getElementById('video');
+	    var aCanvas = document.getElementById('canvas');
+	    var ctx = aCanvas.getContext('2d');
+	 
+	    navigator.getUserMedia = navigator.getUserMedia ||
+	        navigator.webkitGetUserMedia ||
+	        navigator.mozGetUserMedia ||
+	        navigator.msGetUserMedia;
+	    navigator.getUserMedia({
+	        video: true
+	    }, gotStream, noStream);
+	 
+	    function gotStream(stream) {
+	        video.src = URL.createObjectURL(stream);
+	        video.onerror = function() {
+	            stream.stop();
+	        };
+	        stream.onended = noStream;
+	    }
+	    function noStream(err) {
+	        alert(err);
+	    }
+	    document.getElementById("snap").addEventListener("click", function() {
+	        ctx.drawImage(aVideo, 0, 0, 640, 480); //将获取视频绘制在画布上
+	    });
+	</script>
+
+</body>
+</html>

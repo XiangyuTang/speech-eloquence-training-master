@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>在线学习-演讲口才训练大师</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link rel="stylesheet" href="css/styles-convert.css">
+	<link href="css/bootstrap-convert.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<style>
+        .ui-btn { display: inline-block; padding: 5px 20px; font-size: 14px; line-height: 1.428571429; box-sizing:content-box; text-align: center; border: 1px solid #e8e8e8; border-radius: 3px; 
+        color: #555; background-color: #fff; border-color: #e8e8e8; white-space: nowrap; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+        .ui-btn:hover, .ui-btn.hover { color: #333; text-decoration: none; background-color: #f5c506; border:1px solid #ddd; }
+        .ui-btn:focus, .ui-btn:active { color: #333; outline: 0; }
+        .ui-btn.disabled, .ui-btn.disabled:hover, .ui-btn.disabled:active, .ui-btn[disabled], .ui-btn[disabled]:hover, .ui-state-disabled .ui-btn { cursor: not-allowed; background-color: #eee;
+        border-color: #eee; color: #aaa; }
+        .ui-btn-primary { color: #fff;  background-color: #f5c506;  border-color: #f5c506; }
+        .ui-btn-primary:hover, .ui-btn-primary.hover { color: #fff; background-color:#FAE58F; border-color: #FAE58F; }
+        .ui-btn-primary:focus, .ui-btn-primary:active { color: #fff; }
+        .ui-btn-primary.disabled:focus{ color: #aaa; }
+    </style>
+       
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Theyalow Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	
+	<!---- animated-css ---->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<!---- animated-css ---->	
+</head>
+<body> 
+	
+	<!--header-->
+	<div class="header-in">
+		<div class="container">
+			<div class="logo">
+				<a><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul>
+					<li><a class="scroll"><span> </span> 关于本站</a></li>
+					<li><a href="services.html" class="scroll"> &nbsp;&nbsp;<span class="service"> </span>开始学习&nbsp;&nbsp;</a></li>						
+					<li><a class="scroll"><span class="mail"> </span>联系我们</a></li>
+				</ul>
+				
+				<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(300, function(){
+						});
+					});
+				</script>
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<!--content-->
+	<div class="content">
+		<div class="services">
+			<div class="transfercontainer">
+
+	            <h1>语音转换文字</h1>
+	
+	            <h3 class="no-browser-support">您的浏览器不支持Web Speech API，请使用Chrome浏览器打开此应用。</h3>
+	
+	            <div class="app"> 
+	                <h3>添加演讲稿</h3>
+	                <div class="input-single">
+	                    <textarea id="note-textarea" placeholder="通过语音或者键盘输入来创建演讲稿..." rows="6"></textarea>
+	                </div>         
+	                <button id="start-record-btn" title="Start Recording">开始识别语音</button>
+	                <button id="pause-record-btn" title="Pause Recording">暂停识别</button>
+	                <button id="save-note-btn" title="Save Note">保存笔记</button>   
+	                <p id="recording-instructions">按下 <strong>开始识别语音</strong> 按钮并按提示给予相关权限。</p>
+	                
+	                <h3>历史演讲稿</h3>
+	                <ul id="notes">
+	                    <li>
+	                        <p class="no-notes">暂无演讲稿</p>
+	                    </li>
+	                </ul>
+	
+	            </div>
+
+       		</div>
+       		
+       		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        	<script src="js/convert.js"></script>
+		</div>
+	</div>	 
+	<div class="clearfix"> </div>
+	
+	<!--manual-->
+	<div class="sed-ut">
+		<div class="container">
+			<h3>How to Use?</h3>
+			<div class="col-md-7 design-free">
+				<img src="images/co.png" class="img-responsive" alt="" />
+				<span>ITS 100% FREE</span>
+			</div>
+			<div class="col-md-5 design-in">
+				<ul>
+					<li><a><span> </span>1.将摄像头作为镜子</a></li>
+					<li><a><span> </span>2.上传您的录音 </a></li>
+					<li><a><span> </span>3.参考分数和指导意见练习</a></li>
+					<li><a><span> </span>4.提升您的演讲水平与口才 </a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<a href="#" class="footer-left"><img  src="images/logo-1.png" alt=" " /></a>
+			<p class="footer-grid">Copyright &copy; 2018 Designed by <a target="_blank">nenggeshanwu.jpg</a> </p>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/convert.js"></script>
+	<script type="text/javascript">
+	    var aVideo = document.getElementById('video');
+	    var aCanvas = document.getElementById('canvas');
+	    var ctx = aCanvas.getContext('2d');
+	 
+	    navigator.getUserMedia = navigator.getUserMedia ||
+	        navigator.webkitGetUserMedia ||
+	        navigator.mozGetUserMedia ||
+	        navigator.msGetUserMedia;
+	    navigator.getUserMedia({
+	        video: true
+	    }, gotStream, noStream);
+	 
+	    function gotStream(stream) {
+	        video.src = URL.createObjectURL(stream);
+	        video.onerror = function() {
+	            stream.stop();
+	        };
+	        stream.onended = noStream;
+	    }
+	    function noStream(err) {
+	        alert(err);
+	    }
+	    document.getElementById("snap").addEventListener("click", function() {
+	        ctx.drawImage(aVideo, 0, 0, 640, 480); //将获取视频绘制在画布上
+	    });
+	</script>
+	
+</body>
+</html>
